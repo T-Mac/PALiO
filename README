@@ -1,0 +1,6 @@
+PALIo - Python Audio LIbrary
+Features
+Auto fingerprints songs and repairs id3 tags
+sorts music into Artist/Album/Song structure
+
+PALIo is released under the WTFPL v2.0 see LICENSE for details
