@@ -1,4 +1,5 @@
 import Queue
+import tags
 
 class Track(object):
 	def __init__(self, file, title=None, artist=None, album=[], id=None):
@@ -16,6 +17,9 @@ class Track(object):
 		for album in self.album:
 			text = text + album.title + ' '
 		return text
+		
+	def tagupdate(self):
+		tags.tagupdate(self)
 		
 class Directory(object):
 	def __init__(self, path):
