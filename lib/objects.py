@@ -52,6 +52,10 @@ class Directory(object):
 		
 		return track
 		
+	def addnew(self, path):
+			newtrack = Track(path)
+			self.add(newtrack)
+			return newtrack
 		
 class Album(object):
 	def __init__(self, title, artist = None, tracks = []):
